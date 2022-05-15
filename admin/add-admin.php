@@ -17,21 +17,21 @@
                <td>
                    <input type="text" name="full_name" placeholder="Enter your Name!!!">
                 </td>
-               <td></td>
+               
            </tr>
            <tr>
                <td>Username :</td>
                <td>
                    <input type="text" name="username" placeholder="Enter your UserName!!!">
                 </td>
-               <td></td>
+               
            </tr>
            <tr>
                <td>Password:</td>
                <td>
                    <input type="password" name="password" placeholder="Enter your Password!!!">
                 </td>
-               <td></td>
+               
            </tr>
            
            <tr>

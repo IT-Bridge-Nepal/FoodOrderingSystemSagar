@@ -10,6 +10,30 @@
             echo $_SESSION['add']; //Display session
             unset($_SESSION['add']); //Remove session
         }
+        if(isset($_SESSION['remove'])){
+            echo $_SESSION['remove']; //Display session
+            unset($_SESSION['remove']); //Remove session
+        }
+        if(isset($_SESSION['delete'])){
+            echo $_SESSION['delete']; //Display session
+            unset($_SESSION['delete']); //Remove session
+        }
+        if(isset($_SESSION['no-category-found'])){
+            echo $_SESSION['no-category-found']; //Display session
+            unset($_SESSION['no-category-found']); //Remove session
+        }
+        if(isset($_SESSION['update'])){
+            echo $_SESSION['update']; //Display session
+            unset($_SESSION['update']); //Remove session
+        }
+        if(isset($_SESSION['upload'])){
+            echo $_SESSION['upload']; //Display session
+            unset($_SESSION['upload']); //Remove session
+        }
+        if(isset($_SESSION['failed-remove'])){
+            echo $_SESSION['failed-remove']; //Display session
+            unset($_SESSION['failed-remove']); //Remove session
+        }
   ?><br><br>
   <a href="<?php echo SITEURL; ?>admin/add-category.php" class="btn-primary">Add Category</a>
   <br/> 
@@ -71,8 +95,8 @@
                           <td><?php echo $featured; ?></td>
                           <td><?php echo $active; ?></td>
                <td>
-                   <a href="#" class="btn-secondary"> Update Category</a>
-                   <a href="#" class="btn-danger"> Delete Category</a>
+                   <a href="<?php echo SITEURL; ?>admin/update-category.php?id=<?php echo $id;?>" class="btn-secondary"> Update Category</a>
+                   <a href="<?php echo SITEURL; ?>admin/delete-category.php?id=<?php echo $id;?>&image_name=<?php echo $image_name; ?>" class="btn-danger"> Delete Category</a>
                </td>
 
            </tr>

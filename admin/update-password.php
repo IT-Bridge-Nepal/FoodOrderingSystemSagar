@@ -23,7 +23,7 @@
            <tr>
                <td>New Password :</td>
                <td>
-                   <input type="pasword" name="new_password" placeholder="new password">
+                   <input type="password" name="new_password" placeholder="new password">
                 </td>
                <td></td>
            </tr>

@@ -33,7 +33,7 @@ if(isset($_SESSION['password-not-match']))
 if(isset($_SESSION['change-password']))
 {
     echo $_SESSION['change-password']; //Display session
-    unset($_SESSION['change-password']); //Remove session
+    unset($_SESSION['password-not-match']); //Remove session
 }
   ?>
   <br>

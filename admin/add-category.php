@@ -100,6 +100,10 @@ if(isset($_FILES['image']['name']))
     // to upload image we need image source and destination
     $image_name = $_FILES['image']['name']; 
 
+    // upload image if image is selected only
+    if($image_name !='')
+    {
+
     //auto rename image get extension of image
     $ext = end(explode('.',$image_name)); 
 
@@ -122,6 +126,7 @@ if(isset($_FILES['image']['name']))
 
     die();
     }
+}
 }
 else
 {

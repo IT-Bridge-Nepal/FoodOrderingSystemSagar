@@ -165,6 +165,7 @@ if (isset($_POST['submit'])) {
     $description = $_POST['description'];
     $price = $_POST['price'];
     $current_image = $_POST['current_image'];
+    $category = $_POST['category'];
     $featured = $_POST['featured'];
     $active = $_POST['active'];
 
@@ -245,12 +246,12 @@ if (isset($_POST['submit'])) {
         } 
         else 
         {
-            $image_name = $current_image;
+            $image_name = $current_image; //default image when image is not selected
         }
     }
      else
       {
-        $image_name = $current_image;
+        $image_name = $current_image; //default image when button is not clicked
     }
 
     // update the database

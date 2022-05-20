@@ -199,6 +199,17 @@ fieldset{
     margin-bottom: 1%; 
     font-weight: bold;
 }
+.success{
+    padding: 2%;
+    font-size: xx-large;
+    color: #2ed573;
+}
+
+.error{
+    padding: 2%;
+    font-size: xx-large;
+    color: #ff4757;
+}
 
 
 

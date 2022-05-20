@@ -6,7 +6,7 @@
   <div class="container">
 
     <?php
-    $search = $_POST['search'];
+    $search = mysqli_real_escape_string($conn ,$_POST['search']);
     ?>
 
     <h2>Foods on Your Search <a href="#" class="text-white">"<?php echo $search; ?>"</a></h2>
@@ -59,7 +59,7 @@
             </p>
             <br />
 
-            <a href="#" class="btn btn-primary">Order Now</a>
+            <a href="<?php echo SITEURL; ?>Order.php?food_id=<?php echo $id;?>" class="btn btn-primary">Order Now</a>
           </div>
         </div>
 
